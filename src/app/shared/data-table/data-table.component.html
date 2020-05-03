@@ -1,0 +1,23 @@
+<div class="mat-elevation-z8">
+  <button type="button" mat-raised-button color="primary" (click)="save()">Save</button>
+  <button type="button" mat-raised-button color="primary" (click)="add()">Add</button>
+  <mat-divider></mat-divider>
+  <div class="example-container">
+    <mat-table [dataSource]="dataSource" #table>
+      <ng-container *ngFor="let column of columns" [cdkColumnDef]="column.columnDef">
+        <mat-header-cell *cdkHeaderCellDef>{{ column.header }}</mat-header-cell>
+        <mat-cell *cdkCellDef="let row">
+          <span *ngIf="!column.custom; else showInterval">{{row[column.columnDef]}}</span>
+          <ng-template #showInterval>
+            <input type="text" class="age-input" [(ngModel)]="row[column.columnDef]">
+          </ng-template>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+  </div>
+</div>
+

@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+
+.mat-table{
+  width: 100%;
+}
+
+button {
+  margin: 16px 8px;
+}
+
+.mat-cell, .mat-header-cell{
+  padding: 10px!important;
+  //min-width: 100px;
+}
+
+input{
+  width: 100%;
+}
+
+.example-container{
+  //width: 100%;
+  //width: 900px;
+  height: 200px;
+  overflow: auto;
+}
+
+th.mat-column-position, td.mat-column-position {
+  //padding-left: 8px;
+}
+
+.mat-table-sticky:first-child {
+  border-right: 1px solid #e0e0e0;
+}
