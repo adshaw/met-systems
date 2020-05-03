@@ -28,6 +28,7 @@ export class DynamicGridComponent implements OnInit {
   ];
 
   selectedInterval;
+  savedData;
 
   constructor() {
   }
@@ -38,6 +39,10 @@ export class DynamicGridComponent implements OnInit {
   changeDataTableValues(interval) {
     console.log(interval);
     this.selectedInterval = interval;
+  }
+
+  showSavedData(data) {
+    this.savedData = data;
   }
 
 }

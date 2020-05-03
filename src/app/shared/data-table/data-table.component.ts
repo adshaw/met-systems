@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {MatTable} from '@angular/material/table';
 import {IColumns, IMetSystem, ITimeInterval} from './table-model';
 import {DataTableService} from './data-table.service';
@@ -25,6 +25,8 @@ export class DataTableComponent {
     this._selectedInterval = value;
     this.formColumnsBasedOnInterval(value);
   }
+
+  @Output() dataToEmit = new EventEmitter<string>();
 
   @ViewChild(MatTable, {static: true}) table: MatTable<any>;
 
@@ -72,7 +74,7 @@ export class DataTableComponent {
     this.dataTableService.sendPostRequest(myData).pipe(
       first(),
       tap(data => this.isLoading = false)
-    ).subscribe();
+    ).subscribe(data => this.dataToEmit.emit(data));
   }
 
   add() {

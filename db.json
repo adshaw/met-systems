@@ -103,6 +103,198 @@
           }
         ]
       }
+    ],
+    [
+      {
+        "name": "MDE Item 1",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "test",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "test 2",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "MDE Item 1",
+        "interval": 4,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          },
+          {
+            "time": "04:00",
+            "value": "21"
+          },
+          {
+            "time": "08:00",
+            "value": "21"
+          },
+          {
+            "time": "12:00",
+            "value": "21"
+          },
+          {
+            "time": "16:00",
+            "value": "21"
+          },
+          {
+            "time": "20:00",
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 2",
+        "interval": 4,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "12"
+          },
+          {
+            "time": "04:00",
+            "value": "12"
+          },
+          {
+            "time": "08:00",
+            "value": "12"
+          },
+          {
+            "time": "12:00",
+            "value": "12"
+          },
+          {
+            "time": "16:00",
+            "value": "12"
+          },
+          {
+            "time": "20:00",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 3",
+        "interval": 4,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "112"
+          },
+          {
+            "time": "04:00",
+            "value": "12"
+          },
+          {
+            "time": "08:00",
+            "value": "12"
+          },
+          {
+            "time": "12:00",
+            "value": "3"
+          },
+          {
+            "time": "16:00",
+            "value": "4"
+          },
+          {
+            "time": "20:00",
+            "value": "6"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "MDE Item 1",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 2",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 3",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "MDE Item 1",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "111111"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 2",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "name": "MDE Item 3",
+        "interval": 24,
+        "intervals": [
+          {
+            "time": "00:00",
+            "value": "21"
+          }
+        ]
+      }
     ]
   ],
   "comments": [
