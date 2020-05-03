@@ -15,25 +15,18 @@
     [
       {
         "name": "MDE Item 1",
-        "interval": 6,
+        "interval": 24,
         "intervals": [
           {
             "time": "00:00",
             "value": "21"
-          },
-          {
-            "time": "06:00"
-          },
-          {
-            "time": "12:00"
-          },
-          {
-            "time": "18:00"
           }
         ]
-      },
+      }
+    ],
+    [
       {
-        "name": "MDE Item 2",
+        "name": "MDE Item 1",
         "interval": 6,
         "intervals": [
           {
@@ -58,57 +51,6 @@
     [
       {
         "name": "MDE Item 1",
-        "interval": 4,
-        "intervals": [
-          {
-            "time": "00:00",
-            "value": "21"
-          },
-          {
-            "time": "04:00"
-          },
-          {
-            "time": "08:00"
-          },
-          {
-            "time": "12:00"
-          },
-          {
-            "time": "16:00"
-          },
-          {
-            "time": "20:00"
-          }
-        ]
-      },
-      {
-        "name": "MDE Item 2",
-        "interval": 4,
-        "intervals": [
-          {
-            "time": "00:00",
-            "value": ""
-          },
-          {
-            "time": "04:00"
-          },
-          {
-            "time": "08:00"
-          },
-          {
-            "time": "12:00",
-            "value": ""
-          },
-          {
-            "time": "16:00"
-          },
-          {
-            "time": "20:00"
-          }
-        ]
-      },
-      {
-        "name": "MDE Item 3",
         "interval": 4,
         "intervals": [
           {
@@ -140,12 +82,12 @@
     ],
     [
       {
-        "name": "test 1",
+        "name": "MDE Item 1",
         "interval": 24,
         "intervals": [
           {
             "time": "00:00",
-            "value": "212"
+            "value": "s"
           }
         ]
       }
@@ -157,7 +99,7 @@
         "intervals": [
           {
             "time": "00:00",
-            "value": ""
+            "value": "12"
           }
         ]
       }

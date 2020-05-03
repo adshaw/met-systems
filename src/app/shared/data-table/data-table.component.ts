@@ -20,13 +20,13 @@ import {first, tap} from 'rxjs/operators';
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss']
 })
-export class DataTableComponent{
+export class DataTableComponent {
   @Input() set selectedInterval(value) {
     this._selectedInterval = value;
     this.formColumnsBasedOnInterval(value);
   }
 
-  @ViewChild(MatTable, { static: true }) table: MatTable<any>;
+  @ViewChild(MatTable, {static: true}) table: MatTable<any>;
 
   originalColumnsDefs: IColumns[] = [
     {columnDef: 'name', header: 'Measure point names', custom: true, sticky: true},
@@ -37,6 +37,7 @@ export class DataTableComponent{
   columns: IColumns[];
   dataSource = [];
   timeIntervalColumns: IColumns[];
+  isLoading = false;
 
   private _selectedInterval: number;
 
@@ -59,6 +60,7 @@ export class DataTableComponent{
   }
 
   save() {
+    this.isLoading = true;
     const myData: IMetSystem[] = this.dataSource.map((row) => {
       const intervalObj = {name: row.name, interval: this._selectedInterval};
       const intervals: ITimeInterval[] = this.timeIntervalColumns.map((column: IColumns) => {
@@ -68,7 +70,8 @@ export class DataTableComponent{
     });
     console.log('Sending Data...', myData);
     this.dataTableService.sendPostRequest(myData).pipe(
-      first()
+      first(),
+      tap(data => this.isLoading = false)
     ).subscribe();
   }
 

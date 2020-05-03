@@ -19,5 +19,8 @@
     </mat-table>
 
   </div>
+  <div class="loading-indicator" *ngIf="isLoading">
+    <mat-progress-spinner mode="indeterminate" color="accent"></mat-progress-spinner>
+  </div>
 </div>
 
