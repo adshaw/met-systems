@@ -26,7 +26,7 @@ export class DataTableComponent {
     this.formColumnsBasedOnInterval(value);
   }
 
-  @Output() dataToEmit = new EventEmitter<string>();
+  @Output() dataToEmit = new EventEmitter<IMetSystem[]>();
 
   @ViewChild(MatTable, {static: true}) table: MatTable<any>;
 
@@ -71,6 +71,8 @@ export class DataTableComponent {
       return {...intervalObj, intervals: intervals};
     });
     console.log('Sending Data...', myData);
+    this.isLoading = false;
+    this.dataToEmit.emit(myData);
     this.dataTableService.sendPostRequest(myData).pipe(
       first(),
       tap(data => this.isLoading = false)
