@@ -10,8 +10,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Running Post Request
 
-Install local json server by `npm install -g json-server`
-In another terminal run `json-server --watch db.json`
+Install local json server by `npm install -g json-server`. 
+In another terminal run `json-server --watch db.json`.
+
+Run `http://localhost:3000/posts` to see the saved data.
 
 This is required to save the post Data to a file db.json
 
