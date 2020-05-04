@@ -8,7 +8,7 @@ Please run `npm install` to download the dependencies.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Rinning Post Request
+## Running Post Request
 
 Install local json server by `npm install -g json-server`
 In another terminal run `json-server --watch db.json`
